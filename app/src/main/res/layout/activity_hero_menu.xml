@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.heroMenu">
+
+    <TextView
+        android:id="@+id/heroTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="HERO"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fighterBtn"
+        android:layout_width="146dp"
+        android:layout_height="62dp"
+        android:text="FIGHTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/wanderBtn"
+        app:layout_constraintStart_toStartOf="@+id/wanderBtn"
+        app:layout_constraintTop_toBottomOf="@+id/wanderBtn" />
+
+    <Button
+        android:id="@+id/swordBtn"
+        android:layout_width="146dp"
+        android:layout_height="62dp"
+        android:text="SWORDSMAN"
+        app:layout_constraintBottom_toTopOf="@+id/wanderBtn"
+        app:layout_constraintEnd_toEndOf="@+id/mageBtn"
+        app:layout_constraintStart_toStartOf="@+id/mageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mageBtn" />
+
+    <Button
+        android:id="@+id/rangedBtn"
+        android:layout_width="146dp"
+        android:layout_height="62dp"
+        android:text="RANGER"
+        app:layout_constraintBottom_toTopOf="@+id/mageBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heroTxt" />
+
+    <Button
+        android:id="@+id/mageBtn"
+        android:layout_width="146dp"
+        android:layout_height="62dp"
+        android:text="MAGE"
+        app:layout_constraintBottom_toTopOf="@+id/swordBtn"
+        app:layout_constraintEnd_toEndOf="@+id/rangedBtn"
+        app:layout_constraintStart_toStartOf="@+id/rangedBtn"
+        app:layout_constraintTop_toBottomOf="@+id/rangedBtn" />
+
+    <Button
+        android:id="@+id/wanderBtn"
+        android:layout_width="146dp"
+        android:layout_height="62dp"
+        android:text="WANDERER"
+        app:layout_constraintBottom_toTopOf="@+id/fighterBtn"
+        app:layout_constraintEnd_toEndOf="@+id/swordBtn"
+        app:layout_constraintStart_toStartOf="@+id/swordBtn"
+        app:layout_constraintTop_toBottomOf="@+id/swordBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
