@@ -1,15 +1,16 @@
-package com.example.myapplication.view;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myapplication.R;
 
 import android.os.Bundle;
 
-public class monsterMenu extends AppCompatActivity {
+import com.example.myapplication.R;
+
+public class fighterScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_monster_menu);
+        setContentView(R.layout.activity_fighter_screen);
     }
 }

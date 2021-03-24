@@ -4,68 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.heroMenu">
+    android:background="@drawable/mainbg"
+    tools:context=".heroMenu">
 
-    <TextView
-        android:id="@+id/heroTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="HERO"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/fighterBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="FIGHTER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/wanderBtn"
-        app:layout_constraintStart_toStartOf="@+id/wanderBtn"
-        app:layout_constraintTop_toBottomOf="@+id/wanderBtn" />
+        <ImageButton
+            android:id="@+id/fighterBtn"
+            android:layout_width="222dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="516dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btns" />
 
-    <Button
-        android:id="@+id/swordBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="SWORDSMAN"
-        app:layout_constraintBottom_toTopOf="@+id/wanderBtn"
-        app:layout_constraintEnd_toEndOf="@+id/mageBtn"
-        app:layout_constraintStart_toStartOf="@+id/mageBtn"
-        app:layout_constraintTop_toBottomOf="@+id/mageBtn" />
+        <ImageButton
+            android:id="@+id/mageBtn"
+            android:layout_width="222dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btns"
+            android:text="MAGE" />
 
-    <Button
-        android:id="@+id/rangedBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="RANGER"
-        app:layout_constraintBottom_toTopOf="@+id/mageBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heroTxt" />
+        <ImageButton
+            android:id="@+id/wanderBtn"
+            android:layout_width="222dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="392dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btns" />
 
-    <Button
-        android:id="@+id/mageBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="MAGE"
-        app:layout_constraintBottom_toTopOf="@+id/swordBtn"
-        app:layout_constraintEnd_toEndOf="@+id/rangedBtn"
-        app:layout_constraintStart_toStartOf="@+id/rangedBtn"
-        app:layout_constraintTop_toBottomOf="@+id/rangedBtn" />
+        <ImageButton
+            android:id="@+id/rangedBtn"
+            android:layout_width="222dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btns" />
 
-    <Button
-        android:id="@+id/wanderBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="WANDERER"
-        app:layout_constraintBottom_toTopOf="@+id/fighterBtn"
-        app:layout_constraintEnd_toEndOf="@+id/swordBtn"
-        app:layout_constraintStart_toStartOf="@+id/swordBtn"
-        app:layout_constraintTop_toBottomOf="@+id/swordBtn" />
+        <ImageButton
+            android:id="@+id/swordBtn"
+            android:layout_width="222dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/btns" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RANGER"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/rangedBtn"
+            android:layout_alignTop="@id/rangedBtn"
+            android:layout_alignRight="@id/rangedBtn"
+            android:layout_alignBottom="@id/rangedBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAGE"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/mageBtn"
+            android:layout_alignTop="@id/mageBtn"
+            android:layout_alignRight="@id/mageBtn"
+            android:layout_alignBottom="@id/mageBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SWORDSMAN"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/swordBtn"
+            android:layout_alignTop="@id/swordBtn"
+            android:layout_alignRight="@id/swordBtn"
+            android:layout_alignBottom="@id/swordBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WANDERER"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/wanderBtn"
+            android:layout_alignTop="@id/wanderBtn"
+            android:layout_alignRight="@id/wanderBtn"
+            android:layout_alignBottom="@id/wanderBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIGHTER"
+            android:textSize="20dp"
+            android:layout_alignLeft="@id/fighterBtn"
+            android:layout_alignTop="@id/fighterBtn"
+            android:layout_alignRight="@id/fighterBtn"
+            android:layout_alignBottom="@id/fighterBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"/>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

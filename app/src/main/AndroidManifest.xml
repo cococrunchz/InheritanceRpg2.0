@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".view.fighterScreen"></activity>
-        <activity android:name=".view.wandererScreen" />
-        <activity android:name=".view.swordsmanScreen" />
-        <activity android:name=".view.mageScreen" />
-        <activity android:name=".view.rangerScreen" />
-        <activity android:name=".view.monsterMenu" />
-        <activity android:name=".view.heroMenu" />
-        <activity android:name=".view.homeScreen">
+        <activity android:name=".fighterScreen"></activity>
+        <activity android:name=".wandererScreen" />
+        <activity android:name=".swordsmanScreen" />
+        <activity android:name=".mageScreen" />
+        <activity android:name=".rangerScreen" />
+        <activity android:name=".monsterMenu" />
+        <activity android:name=".heroMenu" />
+        <activity android:name=".homeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

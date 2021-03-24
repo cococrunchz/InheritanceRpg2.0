@@ -1,15 +1,16 @@
-package com.example.myapplication.view;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myapplication.R;
 
 import android.os.Bundle;
 
-public class wandererScreen extends AppCompatActivity {
+import com.example.myapplication.R;
+
+public class mageScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wanderer_screen);
+        setContentView(R.layout.activity_mage_screen);
     }
 }

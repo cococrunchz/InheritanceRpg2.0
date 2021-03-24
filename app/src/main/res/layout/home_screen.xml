@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.homeScreen">
+    android:background="@drawable/mainbg"
+    tools:context=".homeScreen">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RPG INHERITANCE "
+        android:fontFamily="@font/breathefire"
+        android:text="INHERITANCE RPG\n            2.0 "
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,24 +21,78 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.313" />
 
-    <Button
-        android:id="@+id/heroBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="HERO"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/monsterBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="MONSTER"
-        app:layout_constraintEnd_toEndOf="@+id/heroBtn"
-        app:layout_constraintStart_toStartOf="@+id/heroBtn"
-        app:layout_constraintTop_toBottomOf="@+id/heroBtn" />
+        <ImageButton
+            android:id="@+id/heroBtn"
+            android:layout_width="282dp"
+            android:layout_height="232dp"
+            android:background="@drawable/btns"
+            android:scaleType="fitXY"
+            android:text="HERO" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="277dp"
+            android:layout_height="187dp"
+            android:layout_alignLeft="@id/heroBtn"
+            android:layout_alignTop="@id/heroBtn"
+            android:layout_alignRight="@id/heroBtn"
+            android:layout_alignBottom="@id/heroBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="-7dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"
+            android:text="HERO"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/monsterBtn"
+            android:layout_width="282dp"
+            android:layout_height="232dp"
+            android:background="@drawable/btns"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/monsterBtn"
+            android:layout_alignTop="@id/monsterBtn"
+            android:layout_alignRight="@id/monsterBtn"
+            android:layout_alignBottom="@id/monsterBtn"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/breathefire"
+            android:gravity="center"
+            android:text="MONSTER"
+            android:textColor="@color/white"
+            android:textSize="23dp" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

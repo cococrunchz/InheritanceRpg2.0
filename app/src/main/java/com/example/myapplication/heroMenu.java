@@ -1,13 +1,13 @@
-package com.example.myapplication.view;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.example.myapplication.R;
+import android.widget.ImageButton;
 
 public class heroMenu extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,11 +16,11 @@ public class heroMenu extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hero_menu);
 
-        Button ranger = findViewById(R.id.rangedBtn);
-        Button mage = findViewById(R.id.mageBtn);
-        Button swordsman = findViewById(R.id.swordBtn);
-        Button wanderer = findViewById(R.id.wanderBtn);
-        Button fighter = findViewById(R.id.fighterBtn);
+        ImageButton ranger = findViewById(R.id.rangedBtn);
+        ImageButton mage = findViewById(R.id.mageBtn);
+        ImageButton swordsman = findViewById(R.id.swordBtn);
+        ImageButton wanderer = findViewById(R.id.wanderBtn);
+        ImageButton fighter = findViewById(R.id.fighterBtn);
 
         ranger.setOnClickListener(this);
         mage.setOnClickListener(this);

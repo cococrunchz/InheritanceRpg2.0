@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fighterbg"
-    tools:context=".view.fighterScreen">
+    tools:context=".fighterScreen">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

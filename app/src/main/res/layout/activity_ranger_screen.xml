@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rangerbg"
-    tools:context=".view.rangerScreen">
+    tools:context=".rangerScreen">
 
     <ImageButton
         android:id="@+id/nextBtn"
@@ -77,13 +77,14 @@
 
     <EditText
         android:id="@+id/inputLvl"
-        android:layout_width="71dp"
-        android:layout_height="20dp"
+        android:layout_width="65dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="244dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/breathefire"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -207,114 +208,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/PhysDef"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginBottom="140dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/mgAtk"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginBottom="168dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/mgDef"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginBottom="140dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/Int"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginBottom="136dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/Agi"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginBottom="168dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/Str"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="332dp"
-        android:layout_marginBottom="204dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/mp"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginBottom="200dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/physAtk"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="168dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/Hp"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginBottom="204dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/basic_archer"
         android:layout_width="362dp"
@@ -324,6 +217,131 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/basicarcher" />
+
+    <RelativeLayout
+        android:layout_width="122dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/calc"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:background="@drawable/addbtn"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="208dp"
+        android:text="0"
+        android:textSize="18dp"
+        android:fontFamily="@font/breathefire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Agi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/MgAtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/MgDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Mana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PhysAtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PhysDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="144dp"
+        android:fontFamily="@font/breathefire"
+        android:text="0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

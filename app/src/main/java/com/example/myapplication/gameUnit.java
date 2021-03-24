@@ -1,4 +1,4 @@
-package com.example.myapplication.controller;
+package com.example.myapplication;
 
 public class gameUnit {
     int healthPoint;

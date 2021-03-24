@@ -1,4 +1,4 @@
-package com.example.myapplication.view;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.example.myapplication.R;
+import android.widget.ImageButton;
 
 public class homeScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,8 +15,8 @@ public class homeScreen extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_screen);
 
-        Button hero = findViewById(R.id.heroBtn);
-        Button monster = findViewById(R.id.monsterBtn);
+        ImageButton hero = findViewById(R.id.heroBtn);
+        ImageButton monster = findViewById(R.id.monsterBtn);
 
         hero.setOnClickListener(this);
         monster.setOnClickListener(this);
@@ -29,7 +28,7 @@ public class homeScreen extends AppCompatActivity implements View.OnClickListene
             startActivity(hero);
         }
         else if (view.getId() == R.id.monsterBtn){
-            Intent monster = new Intent(homeScreen.this,monsterMenu.class);
+            Intent monster = new Intent(homeScreen.this, monsterMenu.class);
             startActivity(monster);
         }
     }
