@@ -31,8 +31,8 @@ public class rangerScreen extends AppCompatActivity implements View.OnClickListe
         lore = findViewById(R.id.loreBtn);
         calc = (ImageButton) findViewById(R.id.calc);
 
-        calc.setOnClickListener(this);
-        next.setOnClickListener(this);
+        calc.setOnClickListener(this::onClick);
+        next.setOnClickListener(this::onClick);
 
 
         archer.setVisibility(View.INVISIBLE);
@@ -85,7 +85,6 @@ public class rangerScreen extends AppCompatActivity implements View.OnClickListe
 
             case R.id.calc:
 
-                //level <= 100
                 hero basicArcher = new hero("Mei", "Ranger", 0);
 
                 basicArcher.setHerolvl(level);
@@ -124,7 +123,28 @@ public class rangerScreen extends AppCompatActivity implements View.OnClickListe
 
             case R.id.nextBtn:
 
+                secondJob Archer = new secondJob();
+                Class.setText("ARCHER");
 
+                archer.setVisibility(View.VISIBLE);
+                bscArcher.setVisibility(View.GONE);
+
+                switch (v.getId()){
+
+                    case R.id.calc:
+
+                        Archer.setHerolvl(level);
+                        Exp = Math.round(Archer.xpGrowth());
+                        Archer.setHealthPoint(5);
+                        Archer.setHeroXP(Exp);
+
+                        HP = Math.round(Archer.hpGrowth());
+                        hp.setText(Double.toString(HP));
+
+                        break;
+                }
+                
+                break;
 
         }
 

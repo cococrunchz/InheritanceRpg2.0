@@ -5,7 +5,7 @@ public class Monster extends gameUnit{
     //base stats here ->
     private String monsterName;
     private int monsterLvl;
-    private double monsDef, monsAtk, monsXP; //iadjust lng ni bai, di ko sure kung unsay stats ibutang sa monster
+    private double monsPhysDEF, monsPhysATK, monsMgATK, monsMgDEF;
 
     //constructors
     public Monster(String monsterName, int monsterLvl){
@@ -20,14 +20,17 @@ public class Monster extends gameUnit{
     public int getMonsterLvl() {
         return monsterLvl;
     }
-    public double getMonsDef() {
-        return monsDef;
+    public double getMonsPhysDEF() {
+        return monsPhysDEF;
     }
-    public double getMonsAtk() {
-        return monsAtk;
+    public double getMonsPhysATK() {
+        return monsPhysATK;
     }
-    public double getMonsXP() {
-        return monsXP;
+    public double getMonsMgATK() {
+        return monsMgATK;
+    }
+    public double getMonsMgDEF() {
+        return monsMgDEF;
     }
 
     //setters
@@ -37,19 +40,12 @@ public class Monster extends gameUnit{
     public void setMonsterLvl(int monsterLvl) {
         this.monsterLvl = monsterLvl;
     }
-    public void setMonsDef(double monsDef) {
-        this.monsDef = monsDef;
+    public void setMonsPhysDEF(double monsPhysDEF) {
+        this.monsPhysDEF = monsPhysDEF;
     }
-    public void setMonsAtk(double monsAtk) {
-        this.monsAtk = monsAtk;
-    }
-    public void setMonsXP(double monsXP) {
-        this.monsXP = monsXP;
-    }
-
-    //formulas ->
-    public double mons_xpGrowth() {return 9 * getMonsterLvl();} //iadjust lng pud ni HAHAHA
-
+    public void setMonsPhysATK(double monsPhysATK) { this.monsPhysATK = monsPhysATK; }
+    public void setMonsMgATK(double monsMgATK) { this.monsMgATK = monsMgATK; }
+    public void setMonsMgDEF(double monsMgDEF) { this.monsMgDEF = monsMgDEF; }
 
     Monster(){}
 }

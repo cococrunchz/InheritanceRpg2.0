@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".fighterScreen"></activity>
+        <activity android:name=".demonScreen"></activity>
+        <activity android:name=".golemScreen" />
+        <activity android:name=".trollScreen" />
+        <activity android:name=".slimeScreen" />
+        <activity android:name=".fighterScreen" />
         <activity android:name=".wandererScreen" />
         <activity android:name=".swordsmanScreen" />
         <activity android:name=".mageScreen" />
