@@ -8,15 +8,10 @@ public class hero extends gameUnit {
     private double heroPhysATK, heroMgATK, heroMgDEF, heroInt, heroStr, heroAgi, heroXP;
 
     //constructors
-    public hero(String heroName, String heroClass, int heroId, int herolvl, double heroXP, int healthPoint, int manaPoint, double heroPhysATK){
+    public hero(String heroName, String heroClass, int heroId){
         this.heroName = heroName;
         this.heroClass = heroClass;
-        this.herolvl = herolvl;
         this.heroId = heroId;
-        this.heroXP = heroXP;
-        this.heroPhysATK = heroPhysATK;
-        super.healthPoint(healthPoint);
-        super.manaPoint(manaPoint);
     }
 
     //getters
@@ -96,7 +91,7 @@ public class hero extends gameUnit {
     }
 
     //set stat formulas here ->
-    public double xpGrowth(long round) {return 9 * getHerolvl();}
+    public double xpGrowth() {return 9 * herolvl;}
     public double hpGrowth() {return super.getHealthPoint() + (getHeroXP() * getHerolvl());}
     public double mpGrowth() {return super.getManaPoint() + (getHeroXP() * getHerolvl());}
     public double physAtkGrowth() {return getHeroPhysATK() + (getHeroXP() * getHerolvl());}
