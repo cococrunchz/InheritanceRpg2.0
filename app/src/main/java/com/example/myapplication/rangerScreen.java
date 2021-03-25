@@ -20,38 +20,40 @@ public class rangerScreen extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ranger_screen);
 
-        ImageButton next;
-        next = findViewById(R.id.nextBtn);
-        next.setOnClickListener(this);
-
-        ImageButton back, lore, calc;
+        ImageButton next, back, lore, calc;
         TextView Class;
         ImageView archer, bscArcher;
 
+        next = (ImageButton) findViewById(R.id.nextBtn);
         archer = findViewById(R.id.archer);
         bscArcher = findViewById(R.id.basic_archer);
         back = findViewById(R.id.backBtn);
         lore = findViewById(R.id.loreBtn);
+        calc = (ImageButton) findViewById(R.id.calc);
 
-        calc = findViewById(R.id.calc);
         calc.setOnClickListener(this);
+        next.setOnClickListener(this);
+
 
         archer.setVisibility(View.INVISIBLE);
         bscArcher.setVisibility(View.VISIBLE);
 
         Class = findViewById(R.id.rangerClass);
         Class.setText("RANGER");
+
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View v) {
 
         TextView hp, mp, physAtk, physDef, mgAtk, mgDef, str, agi, intel;
         EditText inputLvl;
+        TextView Class;
         ImageView archer, bscArcher;
 
         archer = findViewById(R.id.archer);
         bscArcher = findViewById(R.id.basic_archer);
+        Class = findViewById(R.id.rangerClass);
 
         inputLvl = findViewById(R.id.inputLvl);
         hp = findViewById(R.id.Health);
@@ -79,52 +81,49 @@ public class rangerScreen extends AppCompatActivity implements View.OnClickListe
 
         level = Integer.parseInt(inputLvl.getText().toString());
 
-        if (level <= 100) {
+        switch (v.getId()) {
 
-            hero basicArcher = new hero("Mei", "Ranger", 0);
+            case R.id.calc:
 
-            basicArcher.setHerolvl(level);
-            Exp = Math.round(basicArcher.xpGrowth());
+                //level <= 100
+                hero basicArcher = new hero("Mei", "Ranger", 0);
 
-            basicArcher.setHealthPoint(26);
-            basicArcher.setManaPoint(3);
-            basicArcher.setHeroPhysATK(8);
-            basicArcher.setHeroPhysDEF(5);
-            basicArcher.setHeroMgATK(2);
-            basicArcher.setHeroMgDEF(1);
-            basicArcher.setHeroAgi(15);
-            basicArcher.setHeroInt(13);
-            basicArcher.setHeroStr(6);
-            basicArcher.setHeroXP(Exp);
+                basicArcher.setHerolvl(level);
+                Exp = Math.round(basicArcher.xpGrowth());
+                basicArcher.setHealthPoint(30);
+                basicArcher.setManaPoint(3);
+                basicArcher.setHeroPhysATK(8);
+                basicArcher.setHeroPhysDEF(5);
+                basicArcher.setHeroMgATK(2);
+                basicArcher.setHeroMgDEF(1);
+                basicArcher.setHeroAgi(15);
+                basicArcher.setHeroInt(13);
+                basicArcher.setHeroStr(6);
+                basicArcher.setHeroXP(Exp);
 
+                pAtk = Math.round(basicArcher.physAtkGrowth());
+                pDef = Math.round(basicArcher.physDefGrowth());
+                mAtk = Math.round(basicArcher.mgAtkGrowth());
+                mDef = Math.round(basicArcher.mgDefGrowth());
+                MP = Math.round(basicArcher.mpGrowth());
+                HP = Math.round(basicArcher.hpGrowth());
+                strength = Math.round(basicArcher.strGrowth());
+                agility = Math.round(basicArcher.agiGrowth());
+                intl = Math.round(basicArcher.intGrowth());
 
-            pAtk = Math.round(basicArcher.physAtkGrowth());
-            pDef = Math.round(basicArcher.physDefGrowth());
-            mAtk = Math.round(basicArcher.mgAtkGrowth());
-            mDef = Math.round(basicArcher.mgDefGrowth());
-            MP = Math.round(basicArcher.mpGrowth());
-            HP = Math.round(basicArcher.hpGrowth());
-            strength = Math.round(basicArcher.strGrowth());
-            agility = Math.round(basicArcher.agiGrowth());
-            intl = Math.round(basicArcher.intGrowth());
+                physAtk.setText(Double.toString(pAtk));
+                physDef.setText(Double.toString(pDef));
+                hp.setText(Double.toString(HP));
+                mp.setText(Double.toString(MP));
+                mgAtk.setText(Double.toString(mAtk));
+                mgDef.setText(Double.toString(mDef));
+                str.setText(Double.toString(strength));
+                agi.setText(Double.toString(agility));
+                intel.setText(Double.toString(intl));
+                break;
 
-            physAtk.setText(Double.toString(pAtk));
-            physDef.setText(Double.toString(pDef));
-            hp.setText(Double.toString(HP));
-            mp.setText(Double.toString(MP));
-            mgAtk.setText(Double.toString(mAtk));
-            mgDef.setText(Double.toString(mDef));
-            str.setText(Double.toString(strength));
-            agi.setText(Double.toString(agility));
-            intel.setText(Double.toString(intl));
-        }
-        if(view.getId() == R.id.nextBtn){
+            case R.id.nextBtn:
 
-            archer.setVisibility(View.VISIBLE);
-            bscArcher.setVisibility(View.INVISIBLE);
-
-            secondJob Archer = new secondJob();
-            Archer.setHerolvl(level);
 
 
         }
