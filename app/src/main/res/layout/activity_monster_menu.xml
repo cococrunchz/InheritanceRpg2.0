@@ -4,57 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
     tools:context=".monsterMenu">
 
+    <ImageButton
+        android:id="@+id/demonbtn"
+        android:layout_width="222dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/btns"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/slimetxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="MONSTER"
+        android:layout_alignLeft="@id/slimebtn"
+        android:layout_alignTop="@id/slimebtn"
+        android:layout_alignRight="@id/slimebtn"
+        android:layout_alignBottom="@id/slimebtn"
+        android:fontFamily="@font/breathefire"
+        android:gravity="center"
+        android:text="SLIME"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slimebtn"
+        app:layout_constraintEnd_toEndOf="@+id/slimebtn"
+        app:layout_constraintStart_toStartOf="@+id/slimebtn"
+        app:layout_constraintTop_toTopOf="@+id/slimebtn"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <TextView
+        android:id="@+id/trolltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/trollbtn"
+        android:layout_alignTop="@id/trollbtn"
+        android:layout_alignRight="@id/trollbtn"
+        android:layout_alignBottom="@id/trollbtn"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/breathefire"
+        android:gravity="center"
+        android:text="TROLL"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/trollbtn"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/trollbtn"
+        app:layout_constraintTop_toTopOf="@+id/trollbtn" />
+
+    <TextView
+        android:id="@+id/demontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/demonbtn"
+        android:layout_alignTop="@id/demonbtn"
+        android:layout_alignRight="@id/demonbtn"
+        android:layout_alignBottom="@id/demonbtn"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/breathefire"
+        android:gravity="center"
+        android:text="DEMON"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/demonbtn"
+        app:layout_constraintStart_toStartOf="@+id/demonbtn"
+        app:layout_constraintTop_toTopOf="@+id/demonbtn" />
+
+    <TextView
+        android:id="@+id/golemtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/golembtn"
+        android:layout_alignTop="@id/golembtn"
+        android:layout_alignRight="@id/golembtn"
+        android:layout_alignBottom="@id/golembtn"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/breathefire"
+        android:gravity="center"
+        android:text="GOLEM"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/golembtn"
+        app:layout_constraintStart_toStartOf="@+id/golembtn"
+        app:layout_constraintTop_toTopOf="@+id/golembtn" />
+
+    <ImageButton
+        android:id="@+id/trollbtn"
+        android:layout_width="222dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/btns"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/slimeBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="SLIME"
-        app:layout_constraintBottom_toTopOf="@+id/trollBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/trollBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="TROLL"
-        app:layout_constraintBottom_toTopOf="@+id/golemBtn"
-        app:layout_constraintEnd_toEndOf="@+id/slimeBtn"
-        app:layout_constraintStart_toStartOf="@+id/slimeBtn"
-        app:layout_constraintTop_toBottomOf="@+id/slimeBtn" />
-
-    <Button
-        android:id="@+id/golemBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="GOLEM"
-        app:layout_constraintBottom_toTopOf="@+id/demonBtn"
-        app:layout_constraintEnd_toEndOf="@+id/trollBtn"
-        app:layout_constraintStart_toStartOf="@+id/trollBtn"
-        app:layout_constraintTop_toBottomOf="@+id/trollBtn" />
-
-    <Button
-        android:id="@+id/demonBtn"
-        android:layout_width="146dp"
-        android:layout_height="62dp"
-        android:text="DEMON"
+    <ImageButton
+        android:id="@+id/golembtn"
+        android:layout_width="222dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btns"
+        android:text="MAGE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/golemBtn"
-        app:layout_constraintStart_toStartOf="@+id/golemBtn"
-        app:layout_constraintTop_toBottomOf="@+id/golemBtn" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/slimebtn"
+        android:layout_width="222dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/btns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
