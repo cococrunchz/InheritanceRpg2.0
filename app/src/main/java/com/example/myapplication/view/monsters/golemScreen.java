@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.view.monsters;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,21 +8,25 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class trollScreen extends AppCompatActivity implements View.OnClickListener {
+import com.example.myapplication.R;
+import com.example.myapplication.view.monsterMenu;
+
+public class golemScreen extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_troll_screen);
+        setContentView(R.layout.activity_golem_screen);
 
         ImageButton back;
         TextView Class;
         Class = findViewById(R.id.golemclass);
-        Class.setText("TROLL");
+        Class.setText("GOLEM");
 
         back = findViewById(R.id.backBtn);
 
         back.setOnClickListener(this::onClick);
+
 
         TextView hp, mp, physAtk, physDef, mgAtk, mgDef, str, agi, intel;
 
@@ -40,23 +44,25 @@ public class trollScreen extends AppCompatActivity implements View.OnClickListen
         agi = findViewById(R.id.golemagi);
         intel = findViewById(R.id.trollint);
 
-        hp.setText("1500");
-        mp.setText("350");
-        physAtk.setText("950");
-        physDef.setText("1000");
-        mgAtk.setText("150");
+        hp.setText("2000");
+        mp.setText("300");
+        physAtk.setText("1050");
+        physDef.setText("1500");
+        mgAtk.setText("100");
         mgDef.setText("200");
-        str.setText("300");
-        agi.setText("250");
-        intel.setText("50");
+        str.setText("950");
+        agi.setText("300");
+        intel.setText("500");
+
 
     }
+
     @Override
-    public void onClick(View v){
-        if (v.getId() == R.id.backBtn){
-            Intent back = new Intent(trollScreen.this, monsterMenu.class);
+    public void onClick(View v) {
+        if (v.getId() == R.id.backBtn) {
+            Intent back = new Intent(golemScreen.this, monsterMenu.class);
             startActivity(back);
         }
 
     }
-   
+}

@@ -1,13 +1,17 @@
-package com.example.myapplication;
+package com.example.myapplication.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.myapplication.R;
+import com.example.myapplication.view.heroes.mageScreen;
+import com.example.myapplication.view.heroes.rangerScreen;
+import com.example.myapplication.view.heroes.swordsmanScreen;
+import com.example.myapplication.view.heroes.wandererScreen;
 
 public class heroMenu extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,13 +24,11 @@ public class heroMenu extends AppCompatActivity implements View.OnClickListener 
         ImageButton mage = findViewById(R.id.mageBtn);
         ImageButton swordsman = findViewById(R.id.swordBtn);
         ImageButton wanderer = findViewById(R.id.wanderBtn);
-        ImageButton fighter = findViewById(R.id.fighterBtn);
 
         ranger.setOnClickListener(this);
         mage.setOnClickListener(this);
         swordsman.setOnClickListener(this);
         wanderer.setOnClickListener(this);
-        fighter.setOnClickListener(this);
     }
     @Override
     public void onClick(View view){
@@ -45,10 +47,6 @@ public class heroMenu extends AppCompatActivity implements View.OnClickListener 
         else if (view.getId() == R.id.wanderBtn) {
             Intent wander = new Intent(heroMenu.this, wandererScreen.class);
             startActivity(wander);
-        }
-        else if (view.getId() == R.id.fighterBtn) {
-            Intent sword = new Intent(heroMenu.this, fighterScreen.class);
-            startActivity(sword);
         }
     }
 

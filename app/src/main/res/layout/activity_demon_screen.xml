@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/monsterbg"
-    tools:context=".demonScreen">
+    tools:context=".view.monsters.demonScreen">
 
     <TextView
         android:id="@+id/golemclass"
@@ -172,7 +172,7 @@
         android:fontFamily="@font/breathefire"
         android:text="Int:"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

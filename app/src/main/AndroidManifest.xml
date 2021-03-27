@@ -9,18 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".demonScreen"></activity>
-        <activity android:name=".golemScreen" />
-        <activity android:name=".trollScreen" />
-        <activity android:name=".slimeScreen" />
-        <activity android:name=".fighterScreen" />
-        <activity android:name=".wandererScreen" />
-        <activity android:name=".swordsmanScreen" />
-        <activity android:name=".mageScreen" />
-        <activity android:name=".rangerScreen" />
-        <activity android:name=".monsterMenu" />
-        <activity android:name=".heroMenu" />
-        <activity android:name=".homeScreen">
+        <activity android:name=".view.heroes.secondJob.Thief"></activity>
+        <activity android:name=".view.heroes.secondJob.Summoner" />
+        <activity android:name=".view.heroes.secondJob.Healer" />
+        <activity android:name=".view.heroes.secondJob.Dancer" />
+        <activity android:name=".view.heroes.secondJob.Bard" />
+        <activity android:name=".view.heroes.secondJob.Warrior" />
+        <activity android:name=".view.heroes.secondJob.Knight" />
+        <activity android:name=".view.heroes.secondJob.Archer" />
+        <activity android:name=".view.monsters.demonScreen" />
+        <activity android:name=".view.monsters.golemScreen" />
+        <activity android:name=".view.monsters.trollScreen" />
+        <activity android:name=".view.monsters.slimeScreen" />
+        <activity android:name=".view.heroes.wandererScreen" />
+        <activity android:name=".view.heroes.swordsmanScreen" />
+        <activity android:name=".view.heroes.mageScreen" />
+        <activity android:name=".view.heroes.rangerScreen" />
+        <activity android:name=".view.monsterMenu" />
+        <activity android:name=".view.heroMenu" />
+        <activity android:name=".view.homeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

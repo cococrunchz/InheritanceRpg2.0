@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.controller;
 
 public class hero extends gameUnit {
 
@@ -104,4 +104,5 @@ public class hero extends gameUnit {
 
     public hero(){}
 }
+
 

@@ -1,7 +1,12 @@
-package com.example.myapplication;
+package com.example.myapplication.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.myapplication.R;
+import com.example.myapplication.view.monsters.demonScreen;
+import com.example.myapplication.view.monsters.golemScreen;
+import com.example.myapplication.view.monsters.slimeScreen;
+import com.example.myapplication.view.monsters.trollScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,25 +31,23 @@ public class monsterMenu extends AppCompatActivity implements View.OnClickListen
         demon.setOnClickListener(this);
 
 
-
     }
+
     @Override
-    public void onClick(View view){
-        if (view.getId() == R.id.slimebtn){
+    public void onClick(View view) {
+        if (view.getId() == R.id.slimebtn) {
             Intent slime = new Intent(monsterMenu.this, slimeScreen.class);
             startActivity(slime);
-        }
-        else if (view.getId() == R.id.trollbtn) {
+        } else if (view.getId() == R.id.trollbtn) {
             Intent troll = new Intent(monsterMenu.this, trollScreen.class);
             startActivity(troll);
-        }
-        else if (view.getId() == R.id.golembtn) {
+        } else if (view.getId() == R.id.golembtn) {
             Intent golem = new Intent(monsterMenu.this, golemScreen.class);
             startActivity(golem);
-        }
-        else if (view.getId() == R.id.demonbtn) {
+        } else if (view.getId() == R.id.demonbtn) {
             Intent demon = new Intent(monsterMenu.this, demonScreen.class);
             startActivity(demon);
 
         }
     }
+}

@@ -5,20 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainbg"
-    tools:context=".heroMenu">
+    tools:context=".view.heroMenu">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageButton
-            android:id="@+id/fighterBtn"
-            android:layout_width="222dp"
-            android:layout_height="183dp"
-            android:layout_marginStart="94dp"
-            android:layout_marginTop="516dp"
-            android:layout_marginEnd="95dp"
-            android:background="@drawable/btns" />
+        android:layout_width="413dp"
+        android:layout_height="649dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageButton
             android:id="@+id/mageBtn"
@@ -61,8 +55,6 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RANGER"
-            android:textSize="20dp"
             android:layout_alignLeft="@id/rangedBtn"
             android:layout_alignTop="@id/rangedBtn"
             android:layout_alignRight="@id/rangedBtn"
@@ -74,14 +66,14 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="17dp"
             android:fontFamily="@font/breathefire"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="RANGER"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MAGE"
-            android:textSize="20dp"
             android:layout_alignLeft="@id/mageBtn"
             android:layout_alignTop="@id/mageBtn"
             android:layout_alignRight="@id/mageBtn"
@@ -93,14 +85,14 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="17dp"
             android:fontFamily="@font/breathefire"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="MAGE"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SWORDSMAN"
-            android:textSize="20dp"
             android:layout_alignLeft="@id/swordBtn"
             android:layout_alignTop="@id/swordBtn"
             android:layout_alignRight="@id/swordBtn"
@@ -112,14 +104,14 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="17dp"
             android:fontFamily="@font/breathefire"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="SWORDSMAN"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="WANDERER"
-            android:textSize="20dp"
             android:layout_alignLeft="@id/wanderBtn"
             android:layout_alignTop="@id/wanderBtn"
             android:layout_alignRight="@id/wanderBtn"
@@ -131,26 +123,9 @@
             android:layout_marginRight="1dp"
             android:layout_marginBottom="17dp"
             android:fontFamily="@font/breathefire"
-            android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FIGHTER"
-            android:textSize="20dp"
-            android:layout_alignLeft="@id/fighterBtn"
-            android:layout_alignTop="@id/fighterBtn"
-            android:layout_alignRight="@id/fighterBtn"
-            android:layout_alignBottom="@id/fighterBtn"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="17dp"
-            android:fontFamily="@font/breathefire"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="WANDERER"
+            android:textSize="20dp" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

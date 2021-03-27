@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.view.monsters;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,29 +8,26 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class demonScreen extends AppCompatActivity implements View.OnClickListener {
+import com.example.myapplication.R;
+import com.example.myapplication.view.monsterMenu;
+
+public class slimeScreen extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demon_screen);
+        setContentView(R.layout.activity_slime_screen);
 
         ImageButton back;
         TextView Class;
         Class = findViewById(R.id.golemclass);
-        Class.setText("DEMON");
+        Class.setText("SLIME");
 
         back = findViewById(R.id.backBtn);
 
         back.setOnClickListener(this::onClick);
 
-
-
-
         TextView hp, mp, physAtk, physDef, mgAtk, mgDef, str, agi, intel;
-
-
-
 
 
         Class = findViewById(R.id.golemclass);
@@ -46,29 +43,23 @@ public class demonScreen extends AppCompatActivity implements View.OnClickListen
         agi = findViewById(R.id.golemagi);
         intel = findViewById(R.id.trollint);
 
-        hp.setText("3000");
-        mp.setText("1500");
-        physAtk.setText("1000");
-        physDef.setText("950");
-        mgAtk.setText("1500");
-        mgDef.setText("1000");
-        str.setText("1050");
-        agi.setText("1500");
-        intel.setText("900");
-
-
+        hp.setText("1000");
+        mp.setText("200");
+        physAtk.setText("100");
+        physDef.setText("100");
+        mgAtk.setText("200");
+        mgDef.setText("150");
+        str.setText("50");
+        agi.setText("90");
+        intel.setText("20");
 
     }
+
     @Override
-    public void onClick(View v){
-        if (v.getId() == R.id.backBtn){
-            Intent back = new Intent(demonScreen.this, monsterMenu.class);
+    public void onClick(View v) {
+        if (v.getId() == R.id.backBtn) {
+            Intent back = new Intent(slimeScreen.this, monsterMenu.class);
             startActivity(back);
         }
-
-
-
-
-
     }
 }
